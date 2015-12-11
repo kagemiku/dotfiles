@@ -184,6 +184,7 @@ NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Lokaltog/powerline-fontpatcher'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'kannokanno/previm'
 
 " プラグインの設定
 " begin neocomplcache
@@ -206,6 +207,14 @@ let g:airline_section_b =
     \ '%{""!=airline#extensions#branch#get_head()?("  " . g:airline_left_alt_sep . " "):""}' .
     \ '%t%( %M%)'
 let g:airline_section_c = ''
+
+" set previm
+nnoremap <C-p> :PrevimOpen<CR>
+let g:previm_open_cmd = 'open -a "Google Chrome"'
+augroup PrevimSettings
+    autocmd!
+    autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+augroup END
 
 " Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
