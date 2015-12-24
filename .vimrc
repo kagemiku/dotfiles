@@ -89,6 +89,9 @@ set shiftwidth=4                    " インデント幅をスペース4つ分�
 set softtabstop=4                   " 連続した空白に対してタブキーやバックスペースキーでカーソルが動く幅
 set smarttab                        " タブが押された場合にtabstopではなくshiftwidthの数だけインデントする
 
+"""" remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//ge
+
 """" カラー設定
 set background=dark                     " 背景を黒に
 colorscheme solarized                   " カラースキームcolarizedを適用
