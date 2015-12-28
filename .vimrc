@@ -190,7 +190,6 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kannokanno/previm'
 
 " プラグインの設定
-" begin neocomplcache
 
 " set clang options for vim-clang
 let g:clang_c_options = '-std=c11'
@@ -219,7 +218,7 @@ augroup PrevimSettings
     autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
 augroup END
 
-" Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" set neocomplcache options
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplcache.
@@ -332,7 +331,7 @@ let g:neocomplcache_omni_patterns.perl =
 endfunction
 
 " marksの設定
-" marks {{{
+" marks
 set viminfo='50,\"1000,:0,n~/.vim/viminfo
 set foldmethod=marker
 let g:showmarks_marks_notime = 1
@@ -368,7 +367,7 @@ nn <silent> [Mark]m :Unite mark<CR>
 nn [Mark] :<C-u>call <SID>AutoMarkrement()<CR><CR>:ShowMarksOnce<CR>
 com! -bar MarksDelete sil :delm! | :delm 0-9A-Z | :wv! | :ShowMarksOnce
 nn <silent>[Mark]d :MarksDelete<CR>
-" }}}
+"
 
 
 " NeoBundle がインストールされているなら LoadBundles() を呼び出す
