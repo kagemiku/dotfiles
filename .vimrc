@@ -188,6 +188,7 @@ NeoBundle 'Lokaltog/powerline-fontpatcher'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kannokanno/previm'
+NeoBundle 'mattn/emmet-vim'
 
 " プラグインの設定
 
