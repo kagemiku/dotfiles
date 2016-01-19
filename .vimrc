@@ -189,6 +189,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'mattn/emmet-vim'
+NeoBundle 'rust-lang/rust.vim'
 
 " プラグインの設定
 
