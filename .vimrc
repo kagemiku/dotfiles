@@ -190,6 +190,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'rust-lang/rust.vim'
+"NeoBundle 'racer-rust/vim-racer'
 
 " プラグインの設定
 
@@ -236,6 +237,12 @@ let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
 "let g:neocomplcache_enable_camel_case_completion = 1
 " Use underbar completion.
 "let g:neocomplcache_enable_underbar_completion = 1
+
+" racer
+"let g:rustfmt_autosave = 1
+"let g:rustfmt_command = '$HOME/.cargo/bin/rustfmt'
+"let g:racer_cmd = '$HOME/.cargo/bin/racer'
+"let $RUST_SRC_PATH="/usr/local/src/rustc-1.5.0/src"
 
 " Define dictionary.
 let g:neocomplcache_dictionary_filetype_lists = {
