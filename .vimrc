@@ -185,7 +185,7 @@ NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Lokaltog/powerline-fontpatcher'
-NeoBundle 'bling/vim-airline'
+NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'mattn/emmet-vim'
