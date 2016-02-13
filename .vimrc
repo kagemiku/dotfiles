@@ -186,6 +186,7 @@ NeoBundle 'alpaca-tc/alpaca_powertabline'
 NeoBundle 'Lokaltog/powerline', { 'rtp' : 'powerline/bindings/vim'}
 NeoBundle 'Lokaltog/powerline-fontpatcher'
 NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kannokanno/previm'
 NeoBundle 'mattn/emmet-vim'
@@ -202,6 +203,7 @@ let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
 let g:powerline_symbols = 'fancy'
 "
 " set airline options
+let g:airline_theme='solarized'
 let g:airline_powerline_fonts = 1
 set laststatus=2
 let g:airline_detect_modified = 1
