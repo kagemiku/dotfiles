@@ -118,3 +118,7 @@ hook_add = '''
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
+[[plugins]]
+repo = 'itchyny/calendar.vim'
+on_cmd = ['Calendar']
+
