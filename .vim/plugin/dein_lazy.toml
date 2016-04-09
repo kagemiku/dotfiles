@@ -1,1 +1,120 @@
 [[plugins]]
+repo = 'Shougo/neocomplete.vim'
+on_i = 1
+if = '''has('lua')'''
+hook_add = '''
+    let g:acp_enableAtStartup=0
+    let g:neocomplete#enable_at_startup=1
+    let g:neocomplete#enable_smart_case=1
+    let g:neocomplete#sources#syntax#min_keyword_length=3
+    let g:neocomplete#lock_buffer_name_pattern='\*ku\*'
+
+    let g:neocomplete#sources#dictionary#dictionaries={
+        \ 'default' : '',
+        \ 'vimshell' : $HOME.'/.vimshell_hist',
+        \ 'scheme' : $HOME.'/.gosh_completions'
+            \ }
+
+    if !exists('g:neocomplete#keyword_patterns')
+        let g:neocomplete#keyword_patterns={}
+    endif
+    let g:neocomplete#keyword_patterns['default']='\h\w*'
+
+    "inoremap <expr><C-g>     neocomplete#undo_completion()
+    "inoremap <expr><C-l>     neocomplete#complete_common_string()
+
+    " <CR>: close popup and save indent.
+    inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+    function! s:my_cr_function()
+      return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+    endfunction
+
+    " <TAB>: completion.
+    inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+    " <C-h>, <BS>: close popup and delete backword char.
+    inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+    inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+
+    " Close popup by <Space>.
+    "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+
+    " AutoComplPop like behavior.
+    "let g:neocomplete#enable_auto_select=1
+
+    " Enable omni completion.
+    autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+    autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+    autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+    " Enable heavy omni completion.
+    if !exists('g:neocomplete#sources#omni#input_patterns')
+      let g:neocomplete#sources#omni#input_patterns={}
+    endif
+    "let g:neocomplete#sources#omni#input_patterns.php='[^. \t]->\h\w*\|\h\w*::'
+    "let g:neocomplete#sources#omni#input_patterns.c='[^.[:digit:] *\t]\%(\.\|->\)'
+    "let g:neocomplete#sources#omni#input_patterns.cpp='[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+
+    " For perlomni.vim setting.
+    " https://github.com/c9s/perlomni.vim
+    let g:neocomplete#sources#omni#input_patterns.perl='\h\w*->\h\w*\|\h\w*::'
+'''
+
+[[plugins]]
+repo = 'Shougo/neocomplcache.vim'
+on_i = 1
+if =  '''!has('lua')'''
+hook_add = '''
+    let g:neocomplcache_enable_at_startup=1
+    let g:neocomplcache_enable_ignore_case=1
+    let g:neocomplcache_enable_smart_case=1
+    let g:neocomplcache_min_syntax_length=3
+    let g:neocomplcache_lock_buffer_name_pattern='\*ku\*'
+    if !exists('g:neocomplcache_keyword_patterns')
+        let g:neocomplcache_keyword_patterns={}
+    endif
+    let g:neocomplcache_keyword_patterns._={\h\w*}
+'''
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+on_cmd = ['NERDTree']
+hook_add = '''
+    let g:NERDTreeShowHidden=1
+'''
+
+[[plugins]]
+repo =  'tomtom/tcomment_vim'
+on_i = 1
+
+[[plugins]]
+repo =  'justmao945/vim-clang'
+on_i = 1
+on_ft = ['h', 'hpp', 'c', 'cpp', 'cc']
+hook_add = '''
+    let g:clang_c_options='-std=c11'
+    let g:clang_cpp_options='-std=c++1z -stdlib=libc++ --pedantic-errors'
+'''
+
+[[plugins]]
+repo =  'elixir-lang/vim-elixir'
+on_ft = ['ex', 'exs', 'eex']
+
+[[plugins]]
+repo = 'kannokanno/previm'
+on_cmd = ['PrevimOpen']
+hook_add = '''
+    nnoremap <C-p> :PrevimOpen<CR>
+    let g:previm_open_cmd='open -a "Google Chrome"'
+    augroup PrevimSettings
+        autocmd!
+        autocmd BufNewFile,BufRead *.{md,mdwn,mkd,mkdn,mark*} set filetype=markdown
+    augroup END
+'''
+
+[[plugins]]
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+

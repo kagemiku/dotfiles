@@ -1,1 +1,73 @@
 [[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+hook_add = '''
+    set statusline+=%#warningmsg#
+    set statusline+=%{SyntasticStatuslineFlag()}
+    set statusline+=%*
+
+    let g:syntastic_always_populate_loc_list=1
+    let g:syntastic_auto_loc_list=1
+    let g:syntastic_check_on_wq=0
+    let g:syntastic_error_symbol='✗'
+    let g:syntastic_warning_symbol='⚠'
+    let g:syntastic_style_error_symbol='✗'
+    let g:syntastic_style_warning_symbol='⚠'
+    hi SyntasticErrorSign ctermfg=160
+    hi SyntasticWarningSign ctermfg=220
+
+    " for c++
+    if executable("clang++")
+        let g:syntastic_cpp_compiler='clang++'
+        let g:syntastic_cpp_compiler_options='-std=c++1z -stdlib=libc++'
+    endif
+'''
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'Shougo/context_filetype.vim'
+
+[[plugins]]
+repo = 'osyo-manga/vim-precious'
+depends = ['Shougo/context_filetype.vim']
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = 'vim-airline/vim-airline-themes'
+hook_add = '''
+    let g:airline_theme='bubblegum'
+    let g:airline_linecolumn_prefix=''
+    let g:airline#extensions#hunks#non_zero_only=1
+    let g:airline_powerline_fonts=1
+    let g:airline_detect_modified=1
+    let g:airline#extensions#branch#enabled=0
+    let g:airline#extensions#readonly#enabled=0
+    let g:airline_section_b=
+        \ '%{airline#extensions#branch#get_head()}' .
+        \ '%{""!=airline#extensions#branch#get_head()?("  " . g:airline_left_alt_sep . " "):""}' .
+        \ '%t%( %M%)'
+    let g:airline_section_c=''
+    let s:sep = " %{get(g:, 'airline_right_alt_sep', '')} "
+    let g:airline_section_x=
+          \ '%{strlen(&fileformat)?&fileformat:""}'.s:sep.
+          \ '%{strlen(&fenc)?&fenc:&enc}'.s:sep.
+          \ '%{strlen(&filetype)?&filetype:"no ft"}'
+    let g:airline_section_y='%3p%%'
+    let g:airline_section_z=get(g:, 'airline_linecolumn_prefix', '').'%3l:%-2v'
+    let g:airline_inactive_collapse=0
+'''
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]]
+repo = 'alpaca-tc/alpaca_powertabline'
+depends = ['vim-airline/vim-airline']
+
