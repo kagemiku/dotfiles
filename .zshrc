@@ -68,3 +68,29 @@ alias mkdir='mkdir -p'
 alias -g L='| less'
 alias -g G='| grep'
 
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+
+# zplug
+source ~/.zplug/zplug
+zplug "b4b4r07/zplug"
+
+zplug "themes/agnoster", from:oh-my-zsh
+ZSH_THEME="agnoster"
+
+zplug "zsh-users/zsh-syntax-highlighting"
+zplug "zsh-users/zsh-history-substring-search"
+zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
+zplug "b4b4r07/enhancd", of:enhancd.sh
+
+# install plugins if there are plugins that have not been installed.
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# source plugins and add commands to $PATH
+zplug load --verbose
+
