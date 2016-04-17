@@ -34,7 +34,7 @@ nnoremap sp gT
 nnoremap sq :<C-u>q<CR>
 
 " completion
-" inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
 
 " convinience
 nnoremap <C-g> ggVGy
