@@ -5,6 +5,11 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 
+augroup fileTypeIndent
+    autocmd!
+    autocmd BufNewFile,BufRead *.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+augroup END
+
 " appearance
 set showmatch
 set list
