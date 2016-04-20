@@ -71,3 +71,6 @@ repo = 'vim-airline/vim-airline-themes'
 repo = 'alpaca-tc/alpaca_powertabline'
 depends = ['vim-airline/vim-airline']
 
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
