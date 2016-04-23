@@ -1,26 +1,15 @@
-"""" .xvimrc
+" basic
+set number
+set incsearch
+set wrapscan
+set gdefault
+set expandtab
 
-
-"""" 基本設定
-set number                          " 行番号を表示
-"
-"""" 検索/置換関連
-set incsearch                       " インクリメンタル検索を有効化
-set wrapscan                        " 最終行まで検索したら先頭行に戻る
-set gdefault                        " 置換時gオプションを有効化
-
-
-"""" タブ関連
-set expandtab                       " タブをスペースに展開
-
-" Ctrl+hjklでウィンドウ間を移動
+" mappings
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
-"""" キーバインディング
-" jjをESCに割当
 inoremap jj <ESC>
 inoremap <C-j> j
 
