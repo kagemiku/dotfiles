@@ -1,12 +1,22 @@
 #!/bin/sh
+# shells
+ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+
+# vim
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/.xvimrc ~/.xvimrc
+mkdir -p ~/.vim
 ln -sf ~/dotfiles/.vim/colors ~/.vim/colors
 ln -sf ~/dotfiles/.vim/userautoload ~/.vim/userautoload
 ln -sf ~/dotfiles/.vim/plugin ~/.vim/plugin
-ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
+
+# xvim
+ln -sf ~/dotfiles/.xvimrc ~/.xvimrc
+
+# latexmk
 ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
+
+# git
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
