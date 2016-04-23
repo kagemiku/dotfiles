@@ -3,7 +3,7 @@ My dotfiles.
 
 # Installation
 ## Mac
-> ./dotfilesLink.sh
+> ./install.sh
 
 # Author
 KAGE
