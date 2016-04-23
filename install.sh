@@ -6,9 +6,9 @@ ln -sf ~/dotfiles/.zshrc ~/.zshrc
 # vim
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 mkdir -p ~/.vim
-ln -sf ~/dotfiles/.vim/colors ~/.vim/colors
-ln -sf ~/dotfiles/.vim/userautoload ~/.vim/userautoload
-ln -sf ~/dotfiles/.vim/plugin ~/.vim/plugin
+ln -sf ~/dotfiles/.vim/colors ~/.vim
+ln -sf ~/dotfiles/.vim/userautoload ~/.vim
+ln -sf ~/dotfiles/.vim/plugin ~/.vim
 
 # xvim
 ln -sf ~/dotfiles/.xvimrc ~/.xvimrc
