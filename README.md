@@ -1,13 +1,13 @@
 # dotfiles
-This is a repository for my setting files.
+My dotfiles.
 
-# Install
+# Installation
 ## Mac
-> ~/dotfiles/dotfilesLink.sh
-
-## Windows
-> %HOMEPATH%"\dotfiles\mklinks.bat"
+> ./dotfilesLink.sh
 
 # Author
 KAGE
+
+# License
+MIT License
 
