@@ -94,3 +94,7 @@ alias -g G='| grep'
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
