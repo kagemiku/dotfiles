@@ -5,9 +5,12 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 
+au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+
 augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.coffee setlocal tabstop=2 shiftwidth=2 softtabstop=2
 augroup END
 
 " appearance
