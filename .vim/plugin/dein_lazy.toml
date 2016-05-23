@@ -53,9 +53,9 @@ hook_add = '''
     if !exists('g:neocomplete#sources#omni#input_patterns')
       let g:neocomplete#sources#omni#input_patterns={}
     endif
-    "let g:neocomplete#sources#omni#input_patterns.php='[^. \t]->\h\w*\|\h\w*::'
-    "let g:neocomplete#sources#omni#input_patterns.c='[^.[:digit:] *\t]\%(\.\|->\)'
-    "let g:neocomplete#sources#omni#input_patterns.cpp='[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+    let g:neocomplete#sources#omni#input_patterns.php='[^. \t]->\h\w*\|\h\w*::'
+    let g:neocomplete#sources#omni#input_patterns.c='[^.[:digit:] *\t]\%(\.\|->\)'
+    let g:neocomplete#sources#omni#input_patterns.cpp='[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
     " For perlomni.vim setting.
     " https://github.com/c9s/perlomni.vim
@@ -94,6 +94,9 @@ repo =  'justmao945/vim-clang'
 on_i = 1
 on_ft = ['h', 'hpp', 'c', 'cpp', 'cc']
 hook_add = '''
+    let g:clang_auto=0
+    let g:clang_c_completeopt='menuone'
+    let g:clang_cpp_completeopt='menuone'
     let g:clang_c_options='-std=c11'
     let g:clang_cpp_options='-std=c++1z -stdlib=libc++ --pedantic-errors'
 '''
