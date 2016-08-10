@@ -98,3 +98,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# thefuck
+eval "$(thefuck --alias)"
