@@ -180,3 +180,7 @@ hook_add = '''
 [[plugins]]
 repo = 'kchmck/vim-coffee-script'
 on_ft = ['coffee']
+
+[[plugins]]
+repo = 'keith/swift.vim'
+on_ft = ['swift']
