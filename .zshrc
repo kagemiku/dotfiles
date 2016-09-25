@@ -99,5 +99,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
+# Ruby
+eval "$(rbenv init -)"
+
 # thefuck
 eval "$(thefuck --alias)"
