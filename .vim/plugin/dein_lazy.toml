@@ -184,3 +184,7 @@ on_ft = ['coffee']
 [[plugins]]
 repo = 'keith/swift.vim'
 on_ft = ['swift']
+
+[[plugins]]
+repo = 'wlangstroth/vim-racket'
+on_ft = ['rkt']
