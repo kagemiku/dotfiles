@@ -187,4 +187,4 @@ on_ft = ['swift']
 
 [[plugins]]
 repo = 'wlangstroth/vim-racket'
-on_ft = ['rkt']
+on_ft = ['rkt', 'rkts']
