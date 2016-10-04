@@ -104,3 +104,7 @@ eval "$(rbenv init -)"
 
 # thefuck
 eval "$(thefuck --alias)"
+
+# ant
+export ANT_HOME="/usr/local/bin/ant/"
+export PATH="$ANT_HOME/bin:$PATH"
