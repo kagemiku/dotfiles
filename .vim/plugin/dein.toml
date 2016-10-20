@@ -26,6 +26,9 @@ hook_add = '''
         let g:syntastic_cpp_compiler='clang++'
         let g:syntastic_cpp_compiler_options='-std=c++1z -stdlib=libc++'
     endif
+
+    " for racket
+    let g:syntastic_enable_racket_racket_checker = 1
 '''
 
 [[plugins]]
