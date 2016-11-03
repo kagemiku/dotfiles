@@ -77,6 +77,3 @@ depends = ['vim-airline/vim-airline']
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
-[[plugins]]
-repo = 'Yggdroot/indentLine'
-
