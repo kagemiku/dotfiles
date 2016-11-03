@@ -77,3 +77,26 @@ depends = ['vim-airline/vim-airline']
 [[plugins]]
 repo = 'tyru/open-browser.vim'
 
+[[plugins]]
+repo = 'Shougo/unite.vim'
+hook_add = '''
+    nmap <Space> [unite]
+    nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+    nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
+    nnoremap <silent> [unite]d :<C-u>Unite<Space>directory_mru<CR>
+    nnoremap <silent> [unite]b :<C-u>Unite<Space>buffer<CR>
+    nnoremap <silent> [unite]r :<C-u>Unite<Space>register<CR>
+    nnoremap <silent> [unite]t :<C-u>Unite<Space>tab<CR>
+    nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
+    nnoremap <silent> [unite]o :<C-u>Unite<Space>outline<CR>
+    nnoremap <silent> [unite]<CR> :<C-u>Unite<Space>file_rec:!<CR>
+'''
+
+[[plugins]]
+repo = 'Shougo/neomru.vim'
+
+[[plugins]]
+repo = 'Shougo/neoyank.vim'
+
+[[plugins]]
+repo = 'Shougo/unite-outline'
