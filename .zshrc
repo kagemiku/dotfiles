@@ -35,7 +35,7 @@ select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
-#
+
 # completion
 autoload -Uz compinit
 compinit
@@ -79,19 +79,20 @@ setopt hist_ignore_space
 setopt hist_reduce_blanks
 setopt extended_glob
 
-#
+
 # key binding
 bindkey '^R' history-incremental-pattern-search-backward
 
 
 # alias
 alias ll='ls -al'
-
 alias mkdir='mkdir -p'
-
 alias -g L='| less'
 alias -g G='| grep'
 
+
+# Others
+# Homebrew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Python
