@@ -22,4 +22,5 @@ set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
 " control
 set backspace=start,eol,indent
 set whichwrap=b,s,[,],,~
+source $VIMRUNTIME/macros/matchit.vim
 
