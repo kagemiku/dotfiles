@@ -22,8 +22,11 @@ set autoread
 
 " search and incremental
 set incsearch
-set nohlsearch
+set hlsearch
 set wildmenu wildmode=list:longest,full
 set wrapscan
 set gdefault
 
+" command
+set wildmenu
+set history=5000

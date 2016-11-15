@@ -36,6 +36,9 @@ nnoremap sq :<C-u>q<CR>
 " completion
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 
+" searching
+nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
+
 " convinience
 nnoremap <C-g> ggVGy
 
