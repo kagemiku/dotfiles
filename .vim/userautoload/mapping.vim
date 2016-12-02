@@ -9,11 +9,11 @@ nnoremap <Down> gj
 nnoremap <Up> gk
 
 " moving cursor
-inoremap <C-d> <delete>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
+" inoremap <C-d> <delete>
+" inoremap <C-j> <Down>
+" inoremap <C-k> <Up>
+" inoremap <C-h> <Left>
+" inoremap <C-l> <Right>
 
 " changing active window
 nnoremap <C-h> <C-w>h

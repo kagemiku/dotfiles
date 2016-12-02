@@ -188,3 +188,25 @@ on_ft = ['swift']
 [[plugins]]
 repo = 'vim-scripts/racket.vim'
 on_ft = ['rkt', 'rkts']
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+on_i = 1
+hook_add = '''
+    imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+    smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+    xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+    smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+    \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+    if has('conceal')
+      set conceallevel=2 concealcursor=niv
+    endif
+
+    let g:neosnippet#snippets_directory='~/.vim/dein/repos/github.com/Shougo/neosnippet-snippets/neosnippets'
+'''
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+on_i = 1
