@@ -24,3 +24,5 @@ set backspace=start,eol,indent
 set whichwrap=b,s,[,],,~
 source $VIMRUNTIME/macros/matchit.vim
 
+" for tex
+let g:tex_conceal = ''
