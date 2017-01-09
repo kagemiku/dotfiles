@@ -20,3 +20,5 @@
     st = status
     sb = status -sb
     cm = commit
+    cmm = commit -m
+    cma = commit --amend
