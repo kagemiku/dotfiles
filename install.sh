@@ -13,6 +13,9 @@ ln -sf ~/dotfiles/.vim/plugin ~/.vim
 # xvim
 ln -sf ~/dotfiles/.xvimrc ~/.xvimrc
 
+# ideavim
+ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
+
 # latexmk
 ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
 
