@@ -84,7 +84,7 @@ bindkey '^R' history-incremental-pattern-search-backward
 
 
 # alias
-alias ll='ls -al'
+alias ll='ls -alhF'
 alias mkdir='mkdir -p'
 alias -g L='| less'
 alias -g G='| grep'
