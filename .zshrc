@@ -97,14 +97,16 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if which pyenv > /dev/null; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
 
 # Ruby
-eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # thefuck
-eval "$(thefuck --alias)"
+if which thefuck > /dev/null; then eval "$(thefuck --alias)"; fi
 
 # ant
 export ANT_HOME="/usr/local/bin/ant/"
