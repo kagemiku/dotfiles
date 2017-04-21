@@ -210,3 +210,7 @@ hook_add = '''
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
 on_i = 1
+
+[[plugins]]
+repo = 'derekwyatt/vim-scala'
+on_ft = ['scala']
