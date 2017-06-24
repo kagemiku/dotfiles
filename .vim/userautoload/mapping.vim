@@ -42,3 +42,5 @@ nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 " convinience
 nnoremap <C-g> ggVGy
 
+" plugins
+nnoremap <C-n> :NERDTreeToggle<CR>
