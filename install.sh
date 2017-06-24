@@ -9,6 +9,7 @@ mkdir -p ~/.vim
 ln -sf ~/dotfiles/.vim/colors ~/.vim
 ln -sf ~/dotfiles/.vim/userautoload ~/.vim
 ln -sf ~/dotfiles/.vim/plugin ~/.vim
+ln -sf ~/dotfiles/.vim/dict ~/.vim
 
 # xvim
 ln -sf ~/dotfiles/.xvimrc ~/.xvimrc
