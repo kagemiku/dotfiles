@@ -4,8 +4,8 @@ source ~/.zplug/init.zsh
 zplug "themes/agnoster", from:oh-my-zsh
 ZSH_THEME="agnoster"
 
-zplug "zsh-users/zsh-syntax-highlighting"
-zplug "zsh-users/zsh-history-substring-search"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:3
 zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 zplug "b4b4r07/enhancd", use:init.sh
 
@@ -81,6 +81,8 @@ setopt extended_glob
 
 # key binding
 bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 
 # alias
