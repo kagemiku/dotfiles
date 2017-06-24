@@ -13,6 +13,10 @@
     clean = git-lfs clean %f
     smudge = git-lfs smudge %f
     required = true
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
 [alias]
     co = checkout
     cor = checkout -- "*"
@@ -26,3 +30,5 @@
     cm = commit
     cmm = commit -m
     cma = commit --amend
+[interactive]
+    diffFilter = diff-highlight

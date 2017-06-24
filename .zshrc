@@ -96,6 +96,9 @@ alias -g G='| grep'
 # Homebrew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
+# Git
+export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+
 # Python
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
