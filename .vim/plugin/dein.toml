@@ -80,6 +80,7 @@ repo = 'tyru/open-browser.vim'
 [[plugins]]
 repo = 'Shougo/unite.vim'
 hook_add = '''
+    call unite#custom#source('file', 'matchers', ['matcher_default'])
     nmap <Space> [unite]
     nnoremap <silent> [unite]a :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
     nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer file_mru<CR>
