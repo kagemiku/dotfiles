@@ -12,6 +12,7 @@ augroup fileTypeIndent
     autocmd BufNewFile,BufRead *.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufNewFile,BufRead *.coffee setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufNewFile,BufRead *.rkt setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.py setlocal tabstop=2 shiftwidth=2 softtabstop=2
 augroup END
 
 " appearance
