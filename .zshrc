@@ -108,3 +108,8 @@ if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 
 # go
 export GOPATH=$HOME/.go
+
+# node
+export NODENV_ROOT="$HOME/.nodenv"
+export PATH="$NODENV_ROOT/bin:$PATH"
+if which nodenv > /dev/null; then eval "$(nodenv init -)"; fi
