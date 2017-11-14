@@ -214,3 +214,7 @@ on_i = 1
 [[plugins]]
 repo = 'derekwyatt/vim-scala'
 on_ft = ['scala']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
