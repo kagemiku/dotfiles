@@ -107,7 +107,8 @@ export PATH="$ANT_HOME/bin:$PATH"
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 
 # go
-export GOPATH=$HOME/.go
+export GOPATH="$HOME/.go"
+export PATH="$GOPATH/bin:$PATH"
 
 # node
 export NODENV_ROOT="$HOME/.nodenv"
