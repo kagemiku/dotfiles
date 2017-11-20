@@ -21,6 +21,11 @@ set showmatch
 set list
 set listchars=tab:>.,trail:_,eol:↲,extends:>,precedes:<,nbsp:%
 
+augroup fileTypeListChars
+    autocmd!
+    autocmd BufNewFile,BufRead *.go setlocal nolist
+augroup END
+
 " control
 set backspace=start,eol,indent
 set whichwrap=b,s,[,],,~
