@@ -219,3 +219,9 @@ on_ft = ['scala']
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = ['go']
+hook_add = '''
+    let g:go_highlight_methods = 1
+    let g:go_highlight_structs = 1
+    let g:go_highlight_functions = 1
+    let g:go_highlight_build_constraints = 1
+'''
