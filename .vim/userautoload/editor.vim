@@ -5,7 +5,7 @@ set shiftwidth=4
 set softtabstop=4
 set smarttab
 
-au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+autocmd BufNewFile,BufRead,BufReadPre *.coffee set filetype=coffee
 
 augroup fileTypeIndent
     autocmd!
