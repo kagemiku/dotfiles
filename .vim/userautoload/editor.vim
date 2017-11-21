@@ -35,5 +35,5 @@ source $VIMRUNTIME/macros/matchit.vim
 set spell
 set spelllang=en,cjk
 
-" for tex
-let g:tex_conceal = ''
+" conceal
+set conceallevel=0
