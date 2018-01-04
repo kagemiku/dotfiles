@@ -24,5 +24,8 @@ ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 
+# ctags
+ln -sf ~/dotfiles/.ctags ~/.ctags
+
 # scala
 ln -sf ~/dotfiles/.scalafmt.conf ~/.scalafmt.conf
