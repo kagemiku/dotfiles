@@ -10,6 +10,7 @@ autocmd BufNewFile,BufRead,BufReadPre *.coffee set filetype=coffee
 augroup fileTypeIndent
     autocmd!
     autocmd BufNewFile,BufRead *.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.css setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufNewFile,BufRead *.coffee setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufNewFile,BufRead *.rkt setlocal tabstop=2 shiftwidth=2 softtabstop=2
     autocmd BufNewFile,BufRead *.py setlocal tabstop=2 shiftwidth=2 softtabstop=2
