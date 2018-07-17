@@ -126,3 +126,6 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
 fi
 
 source <(kubectl completion zsh)
+
+# itunes
+export ITUNES_CLI_FUZZY_TOOL="peco"
