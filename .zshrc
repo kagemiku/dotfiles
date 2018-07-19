@@ -128,5 +128,8 @@ fi
 # kubectl
 source <(kubectl completion zsh)
 
+# helm
+source <(helm completion zsh)
+
 # itunes
 export ITUNES_CLI_FUZZY_TOOL="peco"
