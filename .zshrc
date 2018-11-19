@@ -133,7 +133,3 @@ source <(helm completion zsh)
 
 # itunes
 export ITUNES_CLI_FUZZY_TOOL="peco"
-
-autoload -U colors; colors
-source /Users/akira/repos/github/others/zsh-kubectl-prompt/kubectl.zsh
-RPROMPT='%{$fg[blue]%}($ZSH_KUBECTL_PROMPT)%{$reset_color%}'
