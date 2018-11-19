@@ -125,11 +125,5 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
     source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
-# kubectl
-source <(kubectl completion zsh)
-
-# helm
-source <(helm completion zsh)
-
 # itunes
 export ITUNES_CLI_FUZZY_TOOL="peco"
