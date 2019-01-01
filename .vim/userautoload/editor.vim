@@ -6,6 +6,7 @@ set softtabstop=4
 set smarttab
 
 autocmd BufNewFile,BufRead,BufReadPre *.coffee set filetype=coffee
+autocmd BufNewFile,BufRead,BufReadPre *.kt set filetype=kotlin
 
 augroup fileTypeIndent
     autocmd!

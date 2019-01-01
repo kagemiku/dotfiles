@@ -231,3 +231,7 @@ hook_add = '''
 [[plugins]]
 repo = 'maxmellon/vim-jsx-pretty'
 on_ft = ['js']
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+on_ft = ['kt']
