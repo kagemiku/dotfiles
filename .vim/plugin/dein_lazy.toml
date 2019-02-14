@@ -235,3 +235,7 @@ on_ft = ['js']
 [[plugins]]
 repo = 'udalov/kotlin-vim'
 on_ft = ['kt']
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['typescript']
