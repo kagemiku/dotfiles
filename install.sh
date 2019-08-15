@@ -29,3 +29,6 @@ ln -sf ~/dotfiles/.ctags ~/.ctags
 
 # scala
 ln -sf ~/dotfiles/.scalafmt.conf ~/.scalafmt.conf
+
+# gem
+ln -sf ~/dotfiles/.gemrc ~/.gemrc
