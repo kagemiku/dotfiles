@@ -132,3 +132,6 @@ fi
 
 # itunes
 export ITUNES_CLI_FUZZY_TOOL="peco"
+
+# vim
+export LC_ALL=en_US.UTF-8
