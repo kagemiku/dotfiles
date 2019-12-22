@@ -239,3 +239,10 @@ on_ft = ['kt']
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
 on_ft = ['typescript']
+
+[[plugins]]
+repo = 'rust-lang/rust.vim'
+on_ft = ['rs']
+hook_add = '''
+    let g:rustfmt_autosave = 1
+'''

@@ -135,3 +135,7 @@ export ITUNES_CLI_FUZZY_TOOL="peco"
 
 # vim
 export LC_ALL=en_US.UTF-8
+
+# Rust
+export CARGO_HOME="$HOME/.cargo"
+export PATH="$CARGO_HOME/bin:$PATH"
