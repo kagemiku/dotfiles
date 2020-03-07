@@ -10,12 +10,12 @@ zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 zplug "b4b4r07/enhancd", use:init.sh
 
 # install plugins if there are plugins that have not been installed.
-if ! zplug check --verbose; then
-    printf "Install? [y/N]: "
-    if read -q; then
-        echo; zplug install
-    fi
-fi
+# if ! zplug check --verbose; then
+#     printf "Install? [y/N]: "
+#     if read -q; then
+#         echo; zplug install
+#     fi
+# fi
 
 # source plugins and add commands to $PATH
 zplug load
@@ -34,10 +34,6 @@ select-word-style default
 zstyle ':zle:*' word-chars " /=;@:{},|"
 zstyle ':zle:*' word-style unspecified
 
-
-# completion
-autoload -Uz compinit
-compinit
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
