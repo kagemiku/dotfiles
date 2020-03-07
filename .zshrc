@@ -97,10 +97,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # thefuck
 if which thefuck > /dev/null; then eval "$(thefuck --alias)"; fi
 
-# ant
-export ANT_HOME="/usr/local/bin/ant/"
-export PATH="$ANT_HOME/bin:$PATH"
-
 # Swift
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
 
