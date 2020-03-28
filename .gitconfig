@@ -32,3 +32,5 @@
     cma = commit --amend
 [interactive]
     diffFilter = diff-highlight
+[ghq]
+    root = ~/.ghq
