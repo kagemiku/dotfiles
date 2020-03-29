@@ -1,6 +1,7 @@
 [user]
     name = kagemiku
     email = kagemiku@gmail.com
+    signingkey = 1FC40EDCE6A98749
 [color]
     diff = auto
     status = auto
@@ -34,3 +35,7 @@
     diffFilter = diff-highlight
 [ghq]
     root = ~/.ghq
+[commit]
+    gpgsign = true
+[gpg]
+    program = gpg
