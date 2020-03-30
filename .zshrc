@@ -80,7 +80,7 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 # Homebrew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-# Git
+# Git & GitHub
 export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
 export GPG_TTY=$(tty)
 
