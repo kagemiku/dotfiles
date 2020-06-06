@@ -32,3 +32,7 @@ ln -sf ~/dotfiles/.scalafmt.conf ~/.scalafmt.conf
 
 # gem
 ln -sf ~/dotfiles/.gemrc ~/.gemrc
+
+# custom shell scripts
+mkdir ~/bin
+ln -sf ~/dotfiles/bin/xcodesign.sh ~/bin/xcodesign

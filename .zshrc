@@ -77,6 +77,9 @@ alias g='cd $(ghq root)/$(ghq list | peco)'
 
 
 # Others
+# Custom shell scripts
+export PATH="$HOME/bin:$PATH"
+
 # Homebrew
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
