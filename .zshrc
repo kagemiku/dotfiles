@@ -133,5 +133,4 @@ export ITUNES_CLI_FUZZY_TOOL="peco"
 export LC_ALL=en_US.UTF-8
 
 # Rust
-export CARGO_HOME="$HOME/.cargo"
-export PATH="$CARGO_HOME/bin:$PATH"
+source "$HOME/.cargo/env"
