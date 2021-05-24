@@ -134,3 +134,6 @@ export LC_ALL=en_US.UTF-8
 
 # Rust
 source "$HOME/.cargo/env"
+
+# Flutter
+export PATH="$HOME/development/flutter/bin:$PATH"
