@@ -76,7 +76,7 @@ hook_add = '''
     if !exists('g:neocomplcache_keyword_patterns')
         let g:neocomplcache_keyword_patterns={}
     endif
-    let g:neocomplcache_keyword_patterns._={\h\w*}
+    let g:neocomplcache_keyword_patterns['default']='\h\w*'
 '''
 
 [[plugins]]
