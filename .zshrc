@@ -62,9 +62,9 @@ setopt extended_glob
 
 
 # key binding
-bindkey '^R' history-incremental-pattern-search-backward
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+# bindkey '^R' history-incremental-pattern-search-backward
+# bindkey '^[[A' history-substring-search-up
+# bindkey '^[[B' history-substring-search-down
 
 
 # alias
@@ -84,7 +84,7 @@ export PATH="$HOME/bin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Git & GitHub
-export PATH=$PATH:/usr/local/share/git-core/contrib/diff-highlight
+export PATH="/opt/homebrew/share/git-core/contrib/diff-highlight:$PATH"
 export GPG_TTY=$(tty)
 
 # Python
@@ -97,9 +97,6 @@ fi
 
 # Ruby
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# thefuck
-if which thefuck > /dev/null; then eval "$(thefuck --alias)"; fi
 
 # Swift
 if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
@@ -126,14 +123,13 @@ if [ -f '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion
     source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
-# itunes
-export ITUNES_CLI_FUZZY_TOOL="peco"
-
 # vim
 export LC_ALL=en_US.UTF-8
 
 # Rust
-source "$HOME/.cargo/env"
+# source "$HOME/.cargo/env"
 
 # Flutter
 export PATH="$HOME/development/flutter/bin:$PATH"
+
+eval $(/opt/homebrew/bin/brew shellenv)
