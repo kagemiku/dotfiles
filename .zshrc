@@ -62,9 +62,9 @@ setopt extended_glob
 
 
 # key binding
-# bindkey '^R' history-incremental-pattern-search-backward
-# bindkey '^[[A' history-substring-search-up
-# bindkey '^[[B' history-substring-search-down
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 
 # alias
