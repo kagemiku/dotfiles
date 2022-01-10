@@ -23,9 +23,6 @@ ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
 # ctags
 ln -sf ~/dotfiles/.ctags ~/.ctags
 
-# gem
-ln -sf ~/dotfiles/.gemrc ~/.gemrc
-
 # custom shell scripts
 mkdir ~/bin
 ln -sf ~/dotfiles/bin/xcodesign.sh ~/bin/xcodesign
