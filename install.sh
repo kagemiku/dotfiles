@@ -16,9 +16,6 @@ ln -sf ~/dotfiles/.xvimrc ~/.xvimrc
 # ideavim
 ln -sf ~/dotfiles/.ideavimrc ~/.ideavimrc
 
-# latexmk
-ln -sf ~/dotfiles/.latexmkrc ~/.latexmkrc
-
 # git
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.gitignore_global ~/.gitignore_global
